@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <title>Height Converter</title>
+    <style>
+        body{
+            margin-top: 70px;
+            background: url("wave.gif");
+        color: #fff;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-5"><span class="text-primary">Height</span> <span class="text-success">Converter</span></h1>
+                <form action="">
+                    <div class="form-group mb-5">
+                        <input id="cm" type="number" class="form-control form-control-lg" placeholder="Enter Height in cm......">
+                    <select id="list" class="form-control" onchange="getSelectValue();">
+                        <option >Select....</option>
+                        <option value="metres">metres</option>
+                        <option value="inch" >inch</option>
+                        <option value="foot">foot</option>
+                    </select> 
+                    </div>
+                </form>
+
+                <div class="container text-center">
+                    <button class="btn btn-primary" id="convert">Convert</button>
+                </div>
+
+                <div id="output">
+                    <div class="card card-primary mb-2">
+                        <div class="card-block">
+                            <h4>Metres:</h4>
+                            <div id="metresOutput"></div>
+                        </div>
+                    </div> 
+     
+                    <div class="card card-success mb-2">
+                     <div class="card-block">
+                         <h4>Inch:</h4>
+                         <div id="inchesOutput"></div>
+                     </div>
+                 </div> 
+     
+                 <div class="card card-danger mb-2">
+                     <div class="card-block">
+                         <h4>Foot:</h4>
+                         <div id="feetOutput"></div>
+                     </div>
+                 </div> 
+        </div>
+    </div>
+<script src="js.js"></script>    
+</body>
+</html>
